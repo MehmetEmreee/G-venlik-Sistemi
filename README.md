@@ -25,7 +25,7 @@ Bu script, basit bir GPIO kontrolünden çok daha fazlasını sunar. Güvenilirl
 *   **📡 İnternet Kotası Dostu Raporlama (Crontab ile):**
     *   Sistem, **Turkcell Superbox** gibi kısıtlı veya kotalı internet bağlantıları düşünülerek tasarlanmıştır.
     *   Gün içinde alarm durumu yaratmayan, ancak kaydedilmesi istenen olaylar (örneğin, alana giren araçların tespiti) Frigate tarafından işlenir.
-    *   Ancak bu olayların bildirimleri, internet trafiğinin yoğun olmadığı ve tehlikenin az olduğu gece saatlerinde, `crontab` ile zamanlanmış bir görev tarafından toplu olarak Telegram'a gönderilir.
+    *   Ancak bu olayların bildirimleri telegrama gönderilmez. Tehlikenin fazla olduğu gece saatlerinde, `crontab` ile zamanlanmış bir görev tarafından şantiye sahasına giren araçların videoları olarak Telegram'a gönderilir.
     *   Bu yaklaşım, gün içindeki **değerli internet kotasını kritik alarm bildirimleri için korur.**
 
 *   **🛡️ Çift Bölgeli Sensör Takibi:** İki ayrı sensörü bağımsız olarak izler ve her biri için ayrı ayrı alarm kurma/kapatma imkanı sunar.
