@@ -1,4 +1,4 @@
-
+---
 
 # Raspberry Pi 5 & Google Coral Tabanlı Gelişmiş Güvenlik Sistemi
 
@@ -6,10 +6,10 @@ Bu proje, bir **Raspberry Pi 5**'in işlem gücünü bir **Google Coral TPU** il
 
 | Frigate Arayüzü & Yapay Zeka Tespiti                                   | Telegram Üzerinden Kontrol ve Bildirimler                                   |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| ![Frigate Events Arayüzü](https://raw.githubusercontent.com/MehmetEmreee/mazotdeposuguvenlik/main/WhatsApp%20Image%202025-07-30%20at%2019.08.38.jpeg)   | ![Telegram Bildirimleri](https://raw.githubusercontent.com/MehmetEmreee/mazotdeposuguvenlik/main/WhatsApp%20Image%202025-07-30%20at%2019.08.38%20(2).jpeg)  |
+| ![Frigate Events Arayüzü](https://raw.githubusercontent.com/MehmetEmreee/Guvenlik-Sistemi/main/pictures/1.jpeg)   | ![Telegram Bildirimleri](https://raw.githubusercontent.com/MehmetEmreee/Guvenlik-Sistemi/main/pictures/3.jpeg)  |
 | **Canlı Kamera Görüntüleri**                                              | **Otomatik ve Anlık Olay Bildirimleri**                                         |
-| ![Frigate Canlı İzleme](https://raw.githubusercontent.com/MehmetEmreee/mazotdeposuguvenlik/main/WhatsApp%20Image%202025-07-30%20at%2019.08.38%20(1).jpeg)   | ![Telegram Komutları](https://raw.githubusercontent.com/MehmetEmreee/mazotdeposuguvenlik/main/WhatsApp%20Image%202025-07-30%20at%2019.08.38%20(3).jpeg)   |
-*Görsel 1: Frigate'in nesneleri (Person, Car) etiketlere göre sınıflandırması. Görsel 2: Telegram komutları ile sistemin anlık kontrolü. Görsel 3: Çoklu kamera akışının canlı izlenmesi. Görsel 4: Kapı durumu ve sistem başlangıcı gibi olayların anlık bildirimleri.*
+| ![Frigate Canlı İzleme](https://raw.githubusercontent.com/MehmetEmreee/Guvenlik-Sistemi/main/pictures/2.jpeg)   | ![Telegram Komutları](https://raw.githubusercontent.com/MehmetEmreee/Guvenlik-Sistemi/main/pictures/4.jpeg)   |
+*Görsel 1: Frigate'in nesneleri (Person, Car) etiketlere göre sınıflandırması. Görsel 2: Çoklu kamera akışının canlı izlenmesi. Görsel 3: Kapı durumu ve sistem başlangıcı gibi olayların anlık bildirimleri. Görsel 4: Telegram komutları ile sistemin anlık kontrolü.*
 
 ---
 
@@ -66,10 +66,9 @@ Bu sistemde kullanılan donanımlar, yüksek performans ve güvenilirlik için �
 
 1.  **Kodu İndirin:**
     ```bash
-    git clone https://github.com/MehmetEmreee/mazotdeposuguvenlik.git
-    cd PROJE_ADINIZ
-    ```
-2.  **Gerekli Kütüphaneleri Yükleyin:**
+    git clone https://github.com/MehmetEmreee/Guvenlik-Sistemi.git
+    cd Guvenlik-Sistemi
+    ```2.  **Gerekli Kütüphaneleri Yükleyin:**
     ```bash
     sudo apt-get update && sudo apt-get install python3-pip -y
     pip install -r requirements.txt
@@ -99,8 +98,8 @@ Sistemin Raspberry Pi her açıldığında otomatik olarak başlaması için bir
 
     [Service]
     User=pi
-    WorkingDirectory=/home/pi/PROJE_ADINIZ
-    ExecStart=/usr/bin/python3 /home/pi/PROJE_ADINIZ/security_system.py
+    WorkingDirectory=/home/pi/Guvenlik-Sistemi
+    ExecStart=/usr/bin/python3 /home/pi/Guvenlik-Sistemi/security_system.py
     Restart=always
     RestartSec=10
 
