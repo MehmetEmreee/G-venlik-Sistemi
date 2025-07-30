@@ -1,0 +1,1 @@
+Bu klasörde fotoğraflar bulunur.
